@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -38,6 +39,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showTag(View v) {
-        Log.d("MyTag", "onClick: Show Tag");
+        Toast.makeText(getApplicationContext(), R.string.app_name, Toast.LENGTH_SHORT).show();
     }
 }
